@@ -1,0 +1,7 @@
+scrape_configs:
+  - job_name: "${job_name}"
+    static_configs:
+      - targets: ["${target}"]
+    authorization:
+      type: "Api-Key"
+      credentials: "${new_yml_test}"
